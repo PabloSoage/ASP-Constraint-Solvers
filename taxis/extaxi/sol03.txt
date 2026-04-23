@@ -1,0 +1,28 @@
+ State 0:
+ State 1:
+  wait(3)
+  move(1,r)
+ State 2:
+  pick(1)
+  wait(3)
+ State 3:
+  wait(3)
+  move(1,d)
+ State 4:
+  wait(3)
+  move(1,r)
+ State 5:
+  wait(3)
+  move(1,d)
+ State 6:
+  wait(3)
+  move(1,r)
+ State 7:
+  wait(3)
+  move(1,d)
+ State 8:
+  wait(3)
+  move(1,r)
+ State 9:
+  drop(1)
+  wait(3)

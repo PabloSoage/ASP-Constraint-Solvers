@@ -1,0 +1,47 @@
+ State 0:
+ State 1:
+  move(1,u) move(2,r)
+ State 2:
+  move(1,u) move(2,r)
+ State 3:
+  move(1,r) move(2,u)
+ State 4:
+  move(1,r) move(2,u)
+ State 5:
+  move(1,r) move(2,u)
+ State 6:
+  wait(1)
+  move(2,l)
+ State 7:
+  move(1,r) move(2,l)
+ State 8:
+  pick(2)
+  wait(1)
+ State 9:
+  pick(1)
+  move(2,r)
+ State 10:
+  move(1,r) move(2,r)
+ State 11:
+  move(1,r) move(2,d)
+ State 12:
+  move(1,r) move(2,d)
+ State 13:
+  move(1,r) move(2,d)
+ State 14:
+  move(1,d) move(2,l)
+ State 15:
+  drop(1)
+  move(2,l)
+ State 16:
+  wait(1)
+  move(2,u)
+ State 17:
+  wait(1)
+  move(2,l)
+ State 18:
+  wait(1)
+  move(2,l)
+ State 19:
+  drop(2)
+  wait(1)

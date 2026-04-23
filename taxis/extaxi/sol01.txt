@@ -1,0 +1,17 @@
+ State 0:
+ State 1:
+  move(1,r) move(2,l)
+ State 2:
+  move(1,r) move(2,l)
+ State 3:
+  pick(1) pick(2)
+ State 4:
+  move(1,r) move(2,r)
+ State 5:
+  move(1,r) move(2,r)
+ State 6:
+  move(1,r) move(2,r)
+ State 7:
+  move(1,r) move(2,r)
+ State 8:
+  drop(1) drop(2)

@@ -1,0 +1,779 @@
+=== .\doms\dom01.lp (limit: 9) ===
+
+Plan Length: 8 steps
+Taxi Movements: 12
+
+Answer: 1 (Time: 0.090s)
+ State 0:
+ State 1:
+  move(1,r) move(2,l)
+ State 2:
+  move(1,r) move(2,l)
+ State 3:
+  pick(1) pick(2)
+ State 4:
+  move(1,r) move(2,r)
+ State 5:
+  move(1,r) move(2,r)
+ State 6:
+  move(1,r) move(2,r)
+ State 7:
+  move(1,r) move(2,r)
+ State 8:
+  drop(1) drop(2)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 9
+Time         : 0.087s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.078s
+
+Choices      : 58      
+Conflicts    : 35       (Analyzed: 25)
+Restarts     : 0       
+Model-Level  : 7.0     
+Problems     : 9        (Average Length: 2.00 Splits: 0)
+Lemmas       : 25       (Deleted: 0)
+  Binary     : 1        (Ratio:   4.00%)
+  Ternary    : 2        (Ratio:   8.00%)
+  Conflict   : 25       (Average Length:   20.9 Ratio: 100.00%) 
+  Loop       : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Other      : 0        (Average Length:    0.0 Ratio:   0.00%) 
+Backjumps    : 25       (Average:  2.28 Max:  10 Sum:     57)
+  Executed   : 23       (Average:  2.12 Max:   8 Sum:     53 Ratio:  92.98%)
+  Bounded    : 2        (Average:  2.00 Max:   2 Sum:      4 Ratio:   7.02%)
+
+Rules        : 7373     (Original: 7232)
+  Choice     : 374     
+Atoms        : 1235    
+Bodies       : 4275     (Original: 4282)
+  Count      : 0        (Original: 8)
+Equivalences : 1972     (Atom=Atom: 224 Body=Body: 38 Other: 1710)
+Tight        : Yes
+Variables    : 1637     (Eliminated:    0 Frozen:  718)
+Constraints  : 10077    (Binary:  67.7% Ternary:  20.2% Other:  12.1%)
+
+================================================================================
+
+=== .\doms\dom02.lp (limit: 10) ===
+
+Plan Length: 9 steps
+Taxi Movements: 7
+
+Answer: 1 (Time: 0.094s)
+ State 0:
+ State 1:
+  move(1,l) move(2,r)
+ State 2:
+  pick(1)
+  wait(2)
+ State 3:
+  wait(2)
+  move(1,r)
+ State 4:
+  wait(2)
+  move(1,r)
+ State 5:
+  drop(1)
+  wait(2)
+ State 6:
+  move(1,l) move(2,l)
+ State 7:
+  pick(2)
+  wait(1)
+ State 8:
+  wait(1)
+  move(2,r)
+ State 9:
+  drop(2)
+  wait(1)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 10
+Time         : 0.095s (Solving: 0.01s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.094s
+
+Choices      : 401     
+Conflicts    : 283      (Analyzed: 269)
+Restarts     : 2        (Average: 134.50 Last: 60 Blocked: 0)
+Model-Level  : 5.0     
+Problems     : 10       (Average Length: 2.00 Splits: 0)
+Lemmas       : 269      (Deleted: 0)
+  Binary     : 22       (Ratio:   8.18%)
+  Ternary    : 22       (Ratio:   8.18%)
+  Conflict   : 269      (Average Length:   17.2 Ratio: 100.00%) 
+  Loop       : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Other      : 0        (Average Length:    0.0 Ratio:   0.00%) 
+Backjumps    : 269      (Average:  1.61 Max:  10 Sum:    432)
+  Executed   : 252      (Average:  1.48 Max:  10 Sum:    398 Ratio:  92.13%)
+  Bounded    : 17       (Average:  2.00 Max:   2 Sum:     34 Ratio:   7.87%)
+
+Rules        : 5866     (Original: 5786)
+  Choice     : 291     
+Atoms        : 1202    
+Bodies       : 4257     (Original: 4263)
+  Count      : 0        (Original: 7)
+Equivalences : 1940     (Atom=Atom: 235 Body=Body: 43 Other: 1662)
+Tight        : Yes
+Variables    : 1348     (Eliminated:    0 Frozen:  562)
+Constraints  : 6806     (Binary:  60.3% Ternary:  25.3% Other:  14.4%)
+
+================================================================================
+
+=== .\doms\dom03.lp (limit: 10) ===
+
+Plan Length: 9 steps
+Taxi Movements: 7
+
+Answer: 1 (Time: 0.289s)
+ State 0:
+ State 1:
+  wait(3)
+  move(1,r)
+ State 2:
+  pick(1)
+  wait(3)
+ State 3:
+  wait(3)
+  move(1,r)
+ State 4:
+  wait(3)
+  move(1,d)
+ State 5:
+  wait(3)
+  move(1,d)
+ State 6:
+  wait(3)
+  move(1,d)
+ State 7:
+  wait(3)
+  move(1,r)
+ State 8:
+  wait(3)
+  move(1,r)
+ State 9:
+  drop(1)
+  wait(3)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 10
+Time         : 0.289s (Solving: 0.03s 1st Model: 0.02s Unsat: 0.01s)
+CPU Time     : 0.297s
+
+Choices      : 850     
+Conflicts    : 370      (Analyzed: 356)
+Restarts     : 3        (Average: 118.67 Last: 110 Blocked: 0)
+Model-Level  : 12.0    
+Problems     : 10       (Average Length: 2.00 Splits: 0)
+Lemmas       : 356      (Deleted: 0)
+  Binary     : 30       (Ratio:   8.43%)
+  Ternary    : 19       (Ratio:   5.34%)
+  Conflict   : 356      (Average Length:   92.0 Ratio: 100.00%) 
+  Loop       : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Other      : 0        (Average Length:    0.0 Ratio:   0.00%) 
+Backjumps    : 356      (Average:  2.54 Max:  25 Sum:    904)
+  Executed   : 324      (Average:  2.36 Max:  25 Sum:    840 Ratio:  92.92%)
+  Bounded    : 32       (Average:  2.00 Max:   2 Sum:     64 Ratio:   7.08%)
+
+Rules        : 135681   (Original: 134956)
+  Choice     : 1866    
+Atoms        : 5797    
+Bodies       : 83279    (Original: 83285)
+  Count      : 0        (Original: 7)
+Equivalences : 7554     (Atom=Atom: 256 Body=Body: 181 Other: 7117)
+Tight        : Yes
+Variables    : 9559     (Eliminated:    0 Frozen: 2839)
+Constraints  : 152886   (Binary:  49.4% Ternary:  45.2% Other:   5.4%)
+
+================================================================================
+
+=== .\doms\dom04.lp (limit: 21) ===
+
+Plan Length: 20 steps
+Taxi Movements: 18
+
+Answer: 1 (Time: 4.491s)
+ State 0:
+ State 1:
+  move(1,u)
+ State 2:
+  move(1,u)
+ State 3:
+  move(1,r)
+ State 4:
+  move(1,r)
+ State 5:
+  move(1,r)
+ State 6:
+  move(1,r)
+ State 7:
+  pick(1)
+ State 8:
+  move(1,l)
+ State 9:
+  move(1,l)
+ State 10:
+  move(1,l)
+ State 11:
+  move(1,l)
+ State 12:
+  move(1,d)
+ State 13:
+  move(1,d)
+ State 14:
+  move(1,d)
+ State 15:
+  move(1,r)
+ State 16:
+  move(1,r)
+ State 17:
+  move(1,u)
+ State 18:
+  move(1,r)
+ State 19:
+  move(1,r)
+ State 20:
+  drop(1)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 21
+Time         : 4.483s (Solving: 0.32s 1st Model: 0.05s Unsat: 0.27s)
+CPU Time     : 4.500s
+
+Choices      : 2084    
+Conflicts    : 1253     (Analyzed: 1227)
+Restarts     : 11       (Average: 111.55 Last: 81 Blocked: 0)
+Model-Level  : 5.0     
+Problems     : 21       (Average Length: 2.00 Splits: 0)
+Lemmas       : 1227     (Deleted: 0)
+  Binary     : 60       (Ratio:   4.89%)
+  Ternary    : 30       (Ratio:   2.44%)
+  Conflict   : 1227     (Average Length:  916.5 Ratio: 100.00%) 
+  Loop       : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Other      : 0        (Average Length:    0.0 Ratio:   0.00%) 
+Backjumps    : 1227     (Average:  1.71 Max:  18 Sum:   2094)
+  Executed   : 1216     (Average:  1.69 Max:  18 Sum:   2072 Ratio:  98.95%)
+  Bounded    : 11       (Average:  2.00 Max:   2 Sum:     22 Ratio:   1.05%)
+
+Rules        : 2655558  (Original: 2649819)
+  Choice     : 6528    
+Atoms        : 61224   
+Bodies       : 2319683  (Original: 2319695)
+  Count      : 0        (Original: 13)
+Equivalences : 39363    (Atom=Atom: 767 Body=Body: 528 Other: 38068)
+Tight        : Yes
+Variables    : 49283    (Eliminated:    0 Frozen: 13005)
+Constraints  : 2721588  (Binary:  17.2% Ternary:  81.6% Other:   1.2%)
+
+================================================================================
+
+=== .\doms\dom05.lp (limit: 15) ===
+
+Plan Length: 14 steps
+Taxi Movements: 22
+
+Answer: 1 (Time: 1.836s)
+ State 0:
+ State 1:
+  move(1,r) move(2,l)
+ State 2:
+  move(1,r) move(2,l)
+ State 3:
+  move(1,d) move(2,l)
+ State 4:
+  move(1,d) move(2,l)
+ State 5:
+  move(1,d) move(2,l)
+ State 6:
+  pick(1)
+  move(2,l)
+ State 7:
+  move(1,d) move(2,d)
+ State 8:
+  pick(2)
+  move(1,r)
+ State 9:
+  move(1,r) move(2,d)
+ State 10:
+  move(1,r) move(2,d)
+ State 11:
+  move(1,r) move(2,d)
+ State 12:
+  drop(1)
+  move(2,r)
+ State 13:
+  wait(1)
+  move(2,r)
+ State 14:
+  drop(2)
+  wait(1)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 15
+Time         : 1.830s (Solving: 0.22s 1st Model: 0.08s Unsat: 0.14s)
+CPU Time     : 1.828s
+
+Choices      : 2035    
+Conflicts    : 1023     (Analyzed: 1007)
+Restarts     : 9        (Average: 111.89 Last: 134 Blocked: 0)
+Model-Level  : 12.0    
+Problems     : 15       (Average Length: 2.00 Splits: 0)
+Lemmas       : 1007     (Deleted: 0)
+  Binary     : 40       (Ratio:   3.97%)
+  Ternary    : 60       (Ratio:   5.96%)
+  Conflict   : 1007     (Average Length:  451.2 Ratio: 100.00%) 
+  Loop       : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Other      : 0        (Average Length:    0.0 Ratio:   0.00%) 
+Backjumps    : 1007     (Average:  2.10 Max:  25 Sum:   2111)
+  Executed   : 961      (Average:  2.00 Max:  25 Sum:   2019 Ratio:  95.64%)
+  Bounded    : 46       (Average:  2.00 Max:   2 Sum:     92 Ratio:   4.36%)
+
+Rules        : 1053194  (Original: 1047284)
+  Choice     : 7811    
+Atoms        : 38641   
+Bodies       : 759262   (Original: 759275)
+  Count      : 0        (Original: 14)
+Equivalences : 35181    (Atom=Atom: 755 Body=Body: 669 Other: 33757)
+Tight        : Yes
+Variables    : 45040    (Eliminated:    0 Frozen: 11880)
+Constraints  : 1132044  (Binary:  37.2% Ternary:  59.6% Other:   3.1%)
+
+================================================================================
+
+=== .\doms\dom06.lp (limit: 20) ===
+
+Plan Length: 19 steps
+Taxi Movements: 28
+
+Answer: 1 (Time: 20.991s)
+ State 0:
+ State 1:
+  move(1,u) move(2,r)
+ State 2:
+  move(1,u) move(2,r)
+ State 3:
+  move(1,r) move(2,u)
+ State 4:
+  move(1,r) move(2,u)
+ State 5:
+  move(1,r) move(2,u)
+ State 6:
+  move(1,r) move(2,l)
+ State 7:
+  pick(1)
+  move(2,l)
+ State 8:
+  drop(1)
+  pick(2)
+ State 9:
+  wait(1)
+  move(2,r)
+ State 10:
+  pick(1)
+  move(2,r)
+ State 11:
+  wait(1)
+  move(2,d)
+ State 12:
+  move(1,r) move(2,d)
+ State 13:
+  wait(1)
+  move(2,d)
+ State 14:
+  move(1,r) move(2,l)
+ State 15:
+  wait(1)
+  move(2,l)
+ State 16:
+  move(1,r) move(2,l)
+ State 17:
+  move(1,r) move(2,l)
+ State 18:
+  move(1,d) move(2,u)
+ State 19:
+  drop(1) drop(2)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 20
+Time         : 20.977s (Solving: 13.93s 1st Model: 0.60s Unsat: 13.32s)
+CPU Time     : 20.969s
+
+Choices      : 47601   
+Conflicts    : 29186    (Analyzed: 29160)
+Restarts     : 165      (Average: 176.73 Last: 399 Blocked: 0)
+Model-Level  : 22.0    
+Problems     : 20       (Average Length: 2.00 Splits: 0)
+Lemmas       : 29160    (Deleted: 18721)
+  Binary     : 953      (Ratio:   3.27%)
+  Ternary    : 1379     (Ratio:   4.73%)
+  Conflict   : 29160    (Average Length: 1042.4 Ratio: 100.00%) 
+  Loop       : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Other      : 0        (Average Length:    0.0 Ratio:   0.00%) 
+Backjumps    : 29160    (Average:  1.65 Max:  32 Sum:  47987)
+  Executed   : 28862    (Average:  1.63 Max:  32 Sum:  47391 Ratio:  98.76%)
+  Bounded    : 298      (Average:  2.00 Max:   2 Sum:    596 Ratio:   1.24%)
+
+Rules        : 4330559  (Original: 4316831)
+  Choice     : 20199   
+Atoms        : 115193  
+Bodies       : 3626714  (Original: 3626732)
+  Count      : 0        (Original: 19)
+Equivalences : 79919    (Atom=Atom: 1162 Body=Body: 971 Other: 77786)
+Tight        : Yes
+Variables    : 115907   (Eliminated:    0 Frozen: 26649)
+Constraints  : 4282490  (Binary:  22.4% Ternary:  75.4% Other:   2.2%)
+
+================================================================================
+
+=== .\doms\dom07.lp (limit: 27) ===
+
+Plan Length: 26 steps
+Taxi Movements: 22
+
+Answer: 1 (Time: 84.958s)
+ State 0:
+ State 1:
+  move(1,r)
+ State 2:
+  pick(1)
+ State 3:
+  move(1,d)
+ State 4:
+  move(1,r)
+ State 5:
+  move(1,r)
+ State 6:
+  move(1,r)
+ State 7:
+  move(1,r)
+ State 8:
+  move(1,r)
+ State 9:
+  move(1,r)
+ State 10:
+  drop(1)
+ State 11:
+  move(1,u)
+ State 12:
+  move(1,u)
+ State 13:
+  move(1,l)
+ State 14:
+  move(1,l)
+ State 15:
+  move(1,l)
+ State 16:
+  move(1,l)
+ State 17:
+  move(1,l)
+ State 18:
+  move(1,l)
+ State 19:
+  pick(1)
+ State 20:
+  move(1,r)
+ State 21:
+  move(1,r)
+ State 22:
+  move(1,r)
+ State 23:
+  move(1,r)
+ State 24:
+  move(1,r)
+ State 25:
+  move(1,r)
+ State 26:
+  drop(1)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 27
+Time         : 84.930s (Solving: 67.41s 1st Model: 3.72s Unsat: 63.69s)
+CPU Time     : 84.609s
+
+Choices      : 111359  
+Conflicts    : 81529    (Analyzed: 81483)
+Restarts     : 386      (Average: 211.10 Last: 729 Blocked: 0)
+Model-Level  : 16.0    
+Problems     : 27       (Average Length: 2.00 Splits: 0)
+Lemmas       : 81483    (Deleted: 61281)
+  Binary     : 1499     (Ratio:   1.84%)
+  Ternary    : 1414     (Ratio:   1.74%)
+  Conflict   : 81483    (Average Length: 2344.3 Ratio: 100.00%) 
+  Loop       : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Other      : 0        (Average Length:    0.0 Ratio:   0.00%) 
+Backjumps    : 81483    (Average:  1.36 Max:  27 Sum: 111013)
+  Executed   : 81195    (Average:  1.36 Max:  27 Sum: 110437 Ratio:  99.48%)
+  Bounded    : 288      (Average:  2.00 Max:   2 Sum:    576 Ratio:   0.52%)
+
+Rules        : 9830031  (Original: 9804140)
+  Choice     : 25072   
+Atoms        : 268488  
+Bodies       : 8948871  (Original: 8948896)
+  Count      : 0        (Original: 26)
+Equivalences : 126594   (Atom=Atom: 2181 Body=Body: 582 Other: 123831)
+Tight        : Yes
+Variables    : 158192   (Eliminated:    0 Frozen: 41050)
+Constraints  : 9381074  (Binary:  13.8% Ternary:  85.1% Other:   1.1%)
+
+================================================================================
+
+=== .\doms\dom08.lp (limit: 23) ===
+
+Plan Length: 22 steps
+Taxi Movements: 58
+
+Answer: 1 (Time: 140.847s)
+ State 0:
+ State 1:
+  move(1,r) move(2,d) move(3,l)
+ State 2:
+  move(1,r) move(2,l) move(3,l)
+ State 3:
+  pick(1) pick(3)
+  move(2,l)
+ State 4:
+  move(1,r) move(2,d) move(3,r)
+ State 5:
+  move(1,d) move(2,l) move(3,r)
+ State 6:
+  pick(2)
+  move(1,r) move(3,r)
+ State 7:
+  move(1,r) move(2,r) move(3,r)
+ State 8:
+  move(1,u) move(2,r) move(3,r)
+ State 9:
+  wait(1)
+  move(2,r) move(3,r)
+ State 10:
+  move(1,u) move(2,u) move(3,r)
+ State 11:
+  move(1,u) move(2,u) move(3,d)
+ State 12:
+  move(1,r) move(2,u) move(3,d)
+ State 13:
+  move(1,r) move(2,u) move(3,d)
+ State 14:
+  move(1,d) move(2,r) move(3,d)
+ State 15:
+  wait(3)
+  move(1,d) move(2,r)
+ State 16:
+  move(1,d) move(2,d) move(3,r)
+ State 17:
+  move(1,d) move(2,d) move(3,r)
+ State 18:
+  move(1,r) move(2,d) move(3,u)
+ State 19:
+  move(1,r) move(2,d) move(3,u)
+ State 20:
+  move(1,u) move(2,r) move(3,u)
+ State 21:
+  move(1,u) move(2,r) move(3,u)
+ State 22:
+  drop(1) drop(2) drop(3)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 23
+Time         : 140.815s (Solving: 118.51s 1st Model: 50.10s Unsat: 68.40s)
+CPU Time     : 140.312s
+
+Choices      : 147696  
+Conflicts    : 88124    (Analyzed: 88090)
+Restarts     : 407      (Average: 216.44 Last: 955 Blocked: 0)
+Model-Level  : 18.0    
+Problems     : 23       (Average Length: 2.00 Splits: 0)
+Lemmas       : 88090    (Deleted: 60181)
+  Binary     : 2603     (Ratio:   2.95%)
+  Ternary    : 3591     (Ratio:   4.08%)
+  Conflict   : 88090    (Average Length: 2051.8 Ratio: 100.00%) 
+  Loop       : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Other      : 0        (Average Length:    0.0 Ratio:   0.00%) 
+Backjumps    : 88090    (Average:  1.69 Max: 123 Sum: 149193)
+  Executed   : 86983    (Average:  1.67 Max: 123 Sum: 146979 Ratio:  98.52%)
+  Bounded    : 1107     (Average:  2.00 Max:   2 Sum:   2214 Ratio:   1.48%)
+
+Rules        : 12210066 (Original: 12181238)
+  Choice     : 65926   
+Atoms        : 288978  
+Bodies       : 10243394 (Original: 10243415)
+  Count      : 0        (Original: 22)
+Equivalences : 169677   (Atom=Atom: 2775 Body=Body: 2092 Other: 164810)
+Tight        : Yes
+Variables    : 321335   (Eliminated:    0 Frozen: 57250)
+Constraints  : 10184849 (Binary:  23.7% Ternary:  73.5% Other:   2.9%)
+
+================================================================================
+
+=== .\doms\dom09.lp (limit: 13) ===
+
+Plan Length: 12 steps
+Taxi Movements: 23
+
+Answer: 1 (Time: 76.202s)
+ State 0:
+ State 1:
+  move(1,r) move(2,r) move(3,r)
+ State 2:
+  pick(1) pick(2) pick(3)
+ State 3:
+  move(1,r) move(2,r) move(3,r)
+ State 4:
+  drop(3)
+  move(1,r) move(2,r)
+ State 5:
+  drop(2)
+  move(1,r) move(3,l)
+ State 6:
+  drop(1)
+  move(2,l) move(3,d)
+ State 7:
+  pick(3)
+  move(1,d) move(2,d)
+ State 8:
+  pick(2)
+  move(1,l) move(3,r)
+ State 9:
+  pick(1)
+  move(2,d) move(3,r)
+ State 10:
+  move(1,r) move(2,r) move(3,r)
+ State 11:
+  wait(1)
+  move(2,r) move(3,u)
+ State 12:
+  drop(1) drop(2) drop(3)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 13
+Time         : 76.198s (Solving: 74.71s 1st Model: 50.44s Unsat: 24.26s)
+CPU Time     : 75.672s
+
+Choices      : 233679  
+Conflicts    : 182085   (Analyzed: 182067)
+Restarts     : 676      (Average: 269.33 Last: 402 Blocked: 0)
+Model-Level  : 11.0    
+Problems     : 13       (Average Length: 2.00 Splits: 0)
+Lemmas       : 182067   (Deleted: 161620)
+  Binary     : 1502     (Ratio:   0.82%)
+  Ternary    : 1935     (Ratio:   1.06%)
+  Conflict   : 182067   (Average Length: 1054.6 Ratio: 100.00%) 
+  Loop       : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Other      : 0        (Average Length:    0.0 Ratio:   0.00%) 
+Backjumps    : 182067   (Average:  1.28 Max:  29 Sum: 232550)
+  Executed   : 181711   (Average:  1.27 Max:  29 Sum: 231838 Ratio:  99.69%)
+  Bounded    : 356      (Average:  2.00 Max:   2 Sum:    712 Ratio:   0.31%)
+
+Rules        : 893169   (Original: 886776)
+  Choice     : 15177   
+Atoms        : 37672   
+Bodies       : 657126   (Original: 657137)
+  Count      : 0        (Original: 12)
+Equivalences : 37159    (Atom=Atom: 971 Body=Body: 470 Other: 35718)
+Tight        : Yes
+Variables    : 68785    (Eliminated:    0 Frozen: 12970)
+Constraints  : 1027478  (Binary:  42.8% Ternary:  50.2% Other:   7.0%)
+
+================================================================================
+
+=== .\doms\dom10.lp (limit: 24) ===
+
+Plan Length: 23 steps
+Taxi Movements: 39
+
+Answer: 1 (Time: 308.405s)
+ State 0:
+ State 1:
+  move(1,d) move(2,r)
+ State 2:
+  move(1,r) move(2,r)
+ State 3:
+  move(1,r) move(2,u)
+ State 4:
+  pick(1)
+  move(2,u)
+ State 5:
+  move(1,u) move(2,u)
+ State 6:
+  move(1,r) move(2,l)
+ State 7:
+  move(1,r) move(2,l)
+ State 8:
+  move(1,r) move(2,l)
+ State 9:
+  drop(1)
+  move(2,l)
+ State 10:
+  pick(2)
+  move(1,r)
+ State 11:
+  move(1,d) move(2,l)
+ State 12:
+  move(1,r) move(2,l)
+ State 13:
+  move(1,r) move(2,l)
+ State 14:
+  move(1,u) move(2,l)
+ State 15:
+  move(1,u) move(2,d)
+ State 16:
+  move(1,u) move(2,d)
+ State 17:
+  move(1,l) move(2,d)
+ State 18:
+  move(1,l) move(2,r)
+ State 19:
+  pick(1)
+  move(2,r)
+ State 20:
+  move(1,r) move(2,r)
+ State 21:
+  move(1,r) move(2,u)
+ State 22:
+  drop(2)
+  move(1,d)
+ State 23:
+  drop(1)
+  wait(2)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 24
+Time         : 308.371s (Solving: 288.41s 1st Model: 42.27s Unsat: 246.14s)
+CPU Time     : 307.172s
+
+Choices      : 297865  
+Conflicts    : 223698   (Analyzed: 223664)
+Restarts     : 933      (Average: 239.73 Last: 1312 Blocked: 0)
+Model-Level  : 19.0    
+Problems     : 24       (Average Length: 2.00 Splits: 0)
+Lemmas       : 223664   (Deleted: 168656)
+  Binary     : 4721     (Ratio:   2.11%)
+  Ternary    : 5744     (Ratio:   2.57%)
+  Conflict   : 223664   (Average Length: 2313.2 Ratio: 100.00%) 
+  Loop       : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Other      : 0        (Average Length:    0.0 Ratio:   0.00%) 
+Backjumps    : 223664   (Average:  1.33 Max:  36 Sum: 298297)
+  Executed   : 222669   (Average:  1.32 Max:  36 Sum: 296307 Ratio:  99.33%)
+  Bounded    : 995      (Average:  2.00 Max:   2 Sum:   1990 Ratio:   0.67%)
+
+Rules        : 9468712  (Original: 9435756)
+  Choice     : 47699   
+Atoms        : 281550  
+Bodies       : 8010618  (Original: 8010640)
+  Count      : 0        (Original: 23)
+Equivalences : 162913   (Atom=Atom: 2290 Body=Body: 1261 Other: 159362)
+Tight        : Yes
+Variables    : 248525   (Eliminated:    0 Frozen: 53781)
+Constraints  : 5244548  (Binary:  27.0% Ternary:  70.3% Other:   2.7%)
+
+================================================================================
+

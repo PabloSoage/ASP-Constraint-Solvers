@@ -1,0 +1,26 @@
+#const n=4.
+dim(4).
+col_target(0,2).
+col_target(1,1).
+col_target(2,2).
+col_target(3,2).
+row_target(0,2).
+row_target(1,1).
+row_target(2,2).
+row_target(3,2).
+thermo(0,1,0,0).
+thermo(0,0,0,1).
+thermo(0,0,1,2).
+thermo(0,1,1,3).
+thermo(1,3,0,0).
+thermo(1,2,0,1).
+thermo(1,2,1,2).
+thermo(1,3,1,3).
+thermo(2,3,3,0).
+thermo(2,3,2,1).
+thermo(2,2,2,2).
+thermo(2,2,3,3).
+thermo(2,1,3,4).
+thermo(2,0,3,5).
+thermo(2,0,2,6).
+thermo(2,1,2,7).
